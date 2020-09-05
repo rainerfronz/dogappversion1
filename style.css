@@ -1,1 +1,16 @@
-
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  
+  
+  
+  .hidden {
+    display: none;
+  }
+  
