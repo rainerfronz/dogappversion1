@@ -1,15 +1,22 @@
 // 'use strict';
 
 function getDogPictures() {
-    fetch('https://dog.ceo/api/breeds/image/random/3')
+    let numberOfPics = $('#dogPictures').val();
+    console.log(numberOfPics)
+    let fetchURL = 'https://dog.ceo/api/breeds/image/random/' + numberOfPics;
+    fetch(fetchURL)
         .then(response => response.json())
         .then(responseJson => console.log(responseJson));
 }
 
 function submitForm() {
-    $('form').submit(event => {
-        event.preventDefault();
-        getDogPictures();
+    $("#numberSubmission").submit(event => {
+        console.log('it works')
+        event.preventDefault(); 
+            console.log($('#dogPictures').val());
+
+            getDogPictures();
+        
     });
 }
 

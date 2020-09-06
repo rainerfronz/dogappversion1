@@ -17,18 +17,19 @@
     </header>
 
     <main>
-        <form> <label for="dogPictures">Number dog pic (1-50):</label>
+        <form id="numberSubmission">
+            <label for="dogPictures">Number dog pic (1-50):</label>
 
-            <input type="number" id="dogPictures" name="Dog Pics" min="1" max="50" value="3"><br>
+            <input type="number" id="dogPictures" name="dogPictures" min="1" max="50" value="3"><br>
 
-            <button type="submit" form="dogPictures" value="submit">
+            <button type="submit" value="submit">
                 submit
             </button>
         </form>
-        <section class="results hidden">
+        <!-- <section class="results hidden">
             <h2>How Many Dogs Can You See?</h2>
-            <img class="results-img" alt="placeholder">
-        </section>
+            <img class="results-img" alt="placeholder"> 
+        </section> -->
 
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
