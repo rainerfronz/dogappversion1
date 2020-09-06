@@ -7,25 +7,17 @@ function getDogPictures() {
     fetch(fetchURL)
         .then(response => response.json())
         .then(responseJson => console.log(responseJson));
-        
-        
 }
-
-  
 
 function submitForm() {
     $("#numberSubmission").submit(event => {
         console.log('it works')
-        event.preventDefault(); 
-            console.log($('#dogPictures').val());
+        event.preventDefault();
+        console.log($('#dogPictures').val());
 
-            getDogPictures();
-        
+        getDogPictures();
     });
 }
-
-
-
 $(function () {
     console.log('do it to it!');
     submitForm();
