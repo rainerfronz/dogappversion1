@@ -7,16 +7,10 @@ function getDogPictures() {
     fetch(fetchURL)
         .then(response => response.json())
         .then(responseJson => console.log(responseJson));
+        
+        
 }
-function displayPictures(responseJson) {
-    console.log(responseJson);
-    //replace the existing image with the new one
-    $('.dog-image').replaceWith(
-      `<img src="${responseJson.message}" class="dog-image">`
-    )
-    //display the results section
-    $('.results').removeClass('hidden');
-  }
+
   
 
 function submitForm() {
